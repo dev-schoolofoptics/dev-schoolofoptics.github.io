@@ -1,0 +1,91 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='Contact us at The School Of Optics for tailored support and resources. Reach out via email, phone, or connect with us on social media.')
+        meta(name='author', content='The School Of Optics')
+        meta(name='robots', content='index, follow')
+
+        title Contact Us | School Of Optics
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='apple-touch-icon', sizes='180x180', href='assets/apple-touch-icon.png')
+        link(rel='icon', type='image/png', sizes='32x32', href='assets/favicon-32x32.png')
+        link(rel='icon', type='image/png', sizes='16x16', href='assets/favicon-16x16.png')
+        link(rel='manifest', href='assets/site.webmanifest')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page content
+            section.py-5
+                .container.px-5
+                    .row.gx-5.d-flex.align-items-stretch
+
+                        // Contact Info Section
+                        .col-lg-6.order-lg-2.d-flex
+                            .card.shadow-sm.border-0.rounded-4.bg-light.flex-fill
+                                .card-body.py-5.px-4.px-md-5.contact-us-section
+                                    .text-center.mb-5
+                                        .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.mb-3
+                                            i.bi.bi-envelope
+                                        h1.fw-bolder Contact Us
+                                        p.lead.fw-normal.text-muted.mb-0 We'd love to hear from you!
+
+                                    // Contact Info
+                                    .row.gx-5.justify-content-center.mt-4
+                                        .col-lg-8.col-xl-6
+                                            .d-flex.flex-column.align-items-center.gap-3
+
+                                            // Email Info
+                                            .d-flex.align-items-center.gap-3
+                                                i.bi.bi-envelope.fs-2.text-primary
+                                                a.text-dark(href='mailto:schoolofopticsltd@gmail.com') schoolofopticsltd@gmail.com
+
+                                            // Phone Number Info
+                                            .d-flex.align-items-center.gap-3
+                                                i.bi.bi-telephone-fill.fs-2.text-primary
+                                                a.text-dark(href='tel:+447563266042') +44 7563 266042
+
+                                            // Instagram Link
+                                            .d-flex.align-items-center.gap-3
+                                                i.bi.bi-instagram.fs-2.text-primary
+                                                a.text-dark(href="https://www.instagram.com/school_of_optics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==") Follow us on Instagram
+
+                                            // WhatsApp Link
+                                            .d-flex.align-items-center.gap-3
+                                                i.bi.bi-whatsapp.fs-2.text-primary
+                                                a.text-dark(href="#!") Chat with us on WhatsApp
+
+                        // Pre-Reg Network and Workshop Box
+                        .col-lg-6.order-lg-1.d-flex.flex-column
+                            // Pre-Reg Network Box
+                            .card.text-center.shadow-sm.border-0.rounded-4.mb-4.flex-fill
+                                .card-body.bg-gradient-primary-to-secondary.text-white
+                                    i.bi.bi-whatsapp.fs-1.mb-4
+                                    h3.fw-bolder EXCLUSIVE Pre-Reg Network
+                                    p Join our FREE WhatsApp group, and get tailored support EXCLUSIVELY for Pre-Reg Students
+                                    a.btn.btn-outline-light.mt-3(href='#') Join Now
+
+                            // Workshop Box
+                            .card.text-center.shadow-sm.border-0.rounded-4.flex-fill
+                                .card-body.bg-gradient-primary-to-secondary.text-white
+                                    i.bi.bi-calendar-event-fill.fs-1.mb-4
+                                    h3.fw-bolder Book Your Place at a Workshop
+                                    p Sign up for one of our interactive workshops to boost your practical skills and receive expert guidance.
+                                    a.btn.btn-outline-light.mt-3(href='https://www.eventbrite.com/o/school-of-optics-91860210613') Book Now
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
