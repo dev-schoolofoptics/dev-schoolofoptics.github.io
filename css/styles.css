@@ -11892,8 +11892,27 @@ html {
   height: auto; /* Maintain aspect ratio */
 }
 
-@media (max-width: 768px) {
+/* For screens up to 440px wide */
+@media (max-width: 440px) {
   .logo {
-    max-width: 207px; /* Shrink the logo on smaller devices */
+    max-width: 240px; /* Logo size for screens <= 440px */
+  }
+}
+/* For screens up to 409px wide */
+@media (max-width: 409px) {
+  .logo {
+    max-width: 218px; /* Logo size for screens <= 409px */
+  }
+}
+/* For screens up to 385px wide */
+@media (max-width: 385px) {
+  .logo {
+    max-width: 207px; /* Logo size for screens <= 385px */
+  }
+}
+/* For screens up to 374px wide */
+@media (max-width: 374px) {
+  .logo {
+    max-width: 190px; /* Logo size for screens <= 374px */
   }
 }
