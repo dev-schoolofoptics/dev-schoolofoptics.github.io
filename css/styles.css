@@ -11885,3 +11885,15 @@ html {
 .contact-us-section .text-primary {
   color: #007bff; /* Adjust color as needed for primary links */
 }
+
+.logo {
+  width: 100%; /* Allow the logo to take as much space as possible */
+  max-width: 265px; /* Restrict the max width to a reasonable size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 207px; /* Shrink the logo on smaller devices */
+  }
+}
